@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    transition: .3s ease;
+    
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.d-f-al-c{
+    display: flex;
+    align-items: center;
+}
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.container{
+    width: 350px;
+    height: 450px;
+    padding: 1rem 1.3rem;
+    border-radius: 10px;
+    background: linear-gradient(120deg,#04f5b7,#50668f) ;
+
+
+    .search{
+        width: 100%;
+        height: 80px;
+        justify-content: space-around;
+        padding: 0 10px;
+
+
+        input{
+            background-color: #fff;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #3c3c3c;
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #fff;
+            font-weight: 600;
+            i{
+                color: #000;
+            }
+        }
+    }
+
+    .img{
+        width: 100%;
+        height: 150px;
+        justify-content: center;
+    }
+    .img img{
+        height: 100%;
+    }
+
+
+    .wether-datas{
+        width: 100%;
+        height: 180px;
+
+        .main-data{
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            .temprature{
+                font-size: 50px;
+            }
+            .करन{
+                font-size: 30px;
+            }
+        }
+        .himidity-perent{
+            justify-content: space-between;
+
+            .humidity-img{
+                width: 60px;
+                height: 60px;
+                overflow: hidden;
+
+                img{
+                    width: 80%;
+                    filter: brightness(15);
+                }
+            }
+            .speed-img{
+                width: 60px;
+                height: 60px;
+                overflow: hidden;
+
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+}
