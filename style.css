@@ -162,4 +162,7 @@ nav a:hover{
     nav{
         width: 35vw;
       }
+    header{
+        padding: 0 10px;
+    }
 }
