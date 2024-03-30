@@ -16,7 +16,7 @@ searchBtn.addEventListener('click', async ()=>{
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
     let res = await fetch(`${url}`).then(result=>result.json());
     if (res.cod == 404) {
-        // console.log("jjjj");
+        img.src='./assets/404.png'
         return;
     }
     // console.log("hjhh");
@@ -26,27 +26,27 @@ searchBtn.addEventListener('click', async ()=>{
     claud.innerHTML = res.weather[0].description;
     switch (res.weather[0].main) {
         case "Clouds":
-            img.src='/assets/cloud.png'
+            img.src='./assets/cloud.png'
             break;
 
         case 'Mist':
-            img.src='/assets/mist.png'
+            img.src='./assets/mist.png'
             break;
 
         case 'Snow':
-            img.src='/assets/snow.png'
+            img.src='./assets/snow.png'
             break;
 
         case 'Clear':
-            img.src='/assets/clear.png'
+            img.src='./assets/clear.png'
             break;
     
         case 'Rain':
-            img.src='/assets/rain.png'
+            img.src='./assets/rain.png'
             break;
     
         default:
-            img.src='/assets/clear.png'
+            img.src='./assets/clear.png'
             break;
     }
 })
